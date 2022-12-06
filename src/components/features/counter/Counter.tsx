@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { useAppSelector, useAppDispatch } from "../../../app/hooks";
 import {
   decrement,
@@ -22,7 +21,7 @@ export function Counter() {
   const incrementValue = Number(incrementAmount) || 0;
 
   return (
-    <div>
+    <>
       {show && (
         <div className={styles.row}>
           <button
@@ -78,6 +77,6 @@ export function Counter() {
           Toggle Counter
         </button>
       </div>
-    </div>
+    </>
   );
 }
